@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#21133d">
+  <meta name="description" content="TECHFEST IIT Bombay — Control Room. Enter the arena of engineering, robotics, innovation and ideas.">
+  <title>CONTROL ROOM — Techfest IIT Bombay</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progress-line" id="progressLine"></div>
+
+  <header class="topbar">
+    <a class="identity" href="#home" aria-label="Control Room home">
+      <span class="identity-icon">T<span>F</span></span>
+      <span class="identity-text">TECHFEST <small>IIT BOMBAY / 2026</small></span>
+    </a>
+
+    <div class="system-status"><span></span> SYSTEM ONLINE</div>
+
+    <button class="menu-button" id="menuButton" aria-expanded="false"
+      aria-controls="navigation" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+
+    <nav id="navigation">
+      <a href="#missions">MISSIONS</a>
+      <a href="#protocol">PROTOCOL</a>
+      <a href="#access">ACCESS</a>
+      <a class="nav-enter" href="https://techfest.org/" target="_blank" rel="noopener noreferrer">ENTER ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="opening" id="home">
+      <div class="opening-meta">
+        <span>FIELD NOTES / 001</span>
+        <span>19°08' N — MUMBAI, INDIA</span>
+        <span>INNOVATION HAS NO OFF SWITCH.</span>
+      </div>
+
+      <div class="opening-grid">
+        <div class="opening-copy">
+          <div class="micro-label"><span class="blink-dot"></span> INITIATING FUTURE PROTOCOL</div>
+          <h1>FUTURE<br>UNDER<br><span>CONSTR<span class="slash">/</span>UCTION</span></h1>
+
+          <div class="opening-bottom">
+            <div class="vertical-label">IMAGINE / ENGINEER / EXECUTE</div>
+            <div class="intro-copy">
+              <p>The next breakthrough won't build itself.</p>
+              <p>Enter a world where curiosity becomes code, machines become possibility, and ideas refuse to stay ideas.</p>
+              <a class="lime-button" href="#missions">SELECT YOUR MISSION <span>↘</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="control-art" aria-label="Original schematic-inspired illustration">
+          <div class="art-topline"><span>FIG. 01</span><span>CREATION ENGINE</span></div>
+          <div class="schematic">
+            <div class="schematic-grid"></div>
+            <div class="axis axis-x"></div>
+            <div class="axis axis-y"></div>
+            <div class="orbit orbit-a"></div>
+            <div class="orbit orbit-b"></div>
+            <div class="orbit orbit-c"></div>
+            <div class="machine machine-back"></div>
+            <div class="machine machine-front">
+              <div class="machine-window"></div>
+              <div class="machine-slot"></div>
+              <div class="machine-bolt bolt-a"></div>
+              <div class="machine-bolt bolt-b"></div>
+            </div>
+            <div class="machine-core"><span>∞</span></div>
+            <div class="machine-tag">IDEA<br>→ REALITY</div>
+            <div class="coordinate coordinate-a">X: 001<br>Y: 026</div>
+            <div class="coordinate coordinate-b">CORE<br>ACTIVE</div>
+            <div class="art-cross cross-one">+</div>
+            <div class="art-cross cross-two">+</div>
+            <div class="signal signal-one"></div>
+            <div class="signal signal-two"></div>
+          </div>
+          <div class="art-bottomline"><span>NO. 0001</span><span>HUMAN INGENUITY × TECHNOLOGY</span></div>
+        </div>
+      </div>
+
+      <div class="warning-strip">
+        <span class="warning-symbol">!</span>
+        <span>WARNING: ORDINARY THINKING WILL NOT SURVIVE THIS EXPERIENCE.</span>
+        <span class="warning-code">TF_SYS_026</span>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Techfest themes">
+      <div class="ticker-track">
+        <span>BUILD THE IMPOSSIBLE <b>✳</b></span>
+        <span>CHALLENGE THE KNOWN <b>✳</b></span>
+        <span>ENGINEER TOMORROW <b>✳</b></span>
+        <span>BUILD THE IMPOSSIBLE <b>✳</b></span>
+        <span>CHALLENGE THE KNOWN <b>✳</b></span>
+        <span>ENGINEER TOMORROW <b>✳</b></span>
+      </div>
+    </section>
+
+    <section class="missions" id="missions">
+      <div class="section-intro">
+        <div class="section-index">01 — CHOOSE A DIRECTION</div>
+        <h2>YOUR MOVE.<br><span>YOUR MISSION.</span></h2>
+        <p>Four entry points. Countless ways to test what you're capable of. Select a mission to inspect its brief.</p>
+      </div>
+
+      <div class="mission-console">
+        <div class="mission-list" role="group" aria-label="Choose a mission">
+          <button class="mission-tab active" data-mission="robotics" aria-pressed="true">
+            <span class="mission-number">M—01</span>
+            <span class="mission-name">ROBOTICS & MACHINES</span>
+            <span class="mission-arrow">↗</span>
+          </button>
+          <button class="mission-tab" data-mission="code" aria-pressed="false">
+            <span class="mission-number">M—02</span>
+            <span class="mission-name">CODE & INTELLIGENCE</span>
+            <span class="mission-arrow">↗</span>
+          </button>
+          <button class="mission-tab" data-mission="innovation" aria-pressed="false">
+            <span class="mission-number">M—03</span>
+            <span class="mission-name">IDEAS & INNOVATION</span>
+            <span class="mission-arrow">↗</span>
+          </button>
+          <button class="mission-tab" data-mission="discovery" aria-pressed="false">
+            <span class="mission-number">M—04</span>
+            <span class="mission-name">LEARN & DISCOVER</span>
+            <span class="mission-arrow">↗</span>
+          </button>
+          <div class="console-foot"><span>AWAITING INPUT</span><span>4 MISSIONS AVAILABLE</span></div>
+        </div>
+
+        <article class="mission-detail" aria-live="polite" id="missionDetail">
+          <div class="detail-header">
+            <span id="missionCode">MISSION / 001</span>
+            <span class="detail-status"><i></i> BRIEF READY</span>
+          </div>
+          <div class="detail-art art-robot" id="detailArt" aria-hidden="true">
+            <div class="robot-arm"></div>
+            <div class="robot-head"><span></span><span></span><i></i></div>
+            <div class="robot-body"></div>
+            <div class="robot-joint joint-one"></div>
+            <div class="robot-joint joint-two"></div>
+            <div class="robot-caption">AUTONOMOUS UNIT / 01</div>
+          </div>
+          <div class="detail-content">
+            <span class="detail-category" id="missionCategory">ENGINEERING / PHYSICAL SYSTEMS</span>
+            <h3 id="missionTitle">MAKE MACHINES<br>MOVE WITH PURPOSE.</h3>
+            <p id="missionDescription">Explore robotics, mechanical design and engineering challenges that turn precise thinking into real-world performance.</p>
+            <a class="detail-link" id="missionLink" href="https://techfest.org/" target="_blank" rel="noopener noreferrer">INSPECT THE OFFICIAL PLATFORM <span>↗</span></a>
+          </div>
+          <div class="detail-index" id="detailIndex">01 <span>/ 04</span></div>
+        </article>
+      </div>
+      <p class="fine-print">Mission categories are concept directions, not a confirmed event schedule. Check the official website for current listings.</p>
+    </section>
+
+    <section class="protocol" id="protocol">
+      <div class="protocol-left">
+        <div class="section-index">02 — EXECUTION SEQUENCE</div>
+        <h2>THINK.<br>TEST.<br><span>TRANSFORM.</span></h2>
+        <p>Every meaningful invention begins with a question. What happens next is up to you.</p>
+        <div class="protocol-stamp">NO<br>SHORTCUTS<span>✳</span></div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-number">01</span>
+          <div class="timeline-marker">?</div>
+          <div class="timeline-copy"><span>PHASE ONE / CURIOSITY</span><h3>Question everything.</h3><p>Identify the problem, challenge the obvious answer and define a better possibility.</p></div>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-number">02</span>
+          <div class="timeline-marker">⌘</div>
+          <div class="timeline-copy"><span>PHASE TWO / EXPERIMENT</span><h3>Break the blueprint.</h3><p>Prototype, calculate, collaborate and learn from what doesn't work.</p></div>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-number">03</span>
+          <div class="timeline-marker">↗</div>
+          <div class="timeline-copy"><span>PHASE THREE / EXECUTION</span><h3>Make it matter.</h3><p>Turn what you've learned into a result that can be tested, shared and improved.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="access" id="access">
+      <div class="access-grid">
+        <div class="access-label"><span class="blink-dot"></span> READY WHEN YOU ARE</div>
+        <div class="access-content">
+          <div class="section-index">03 — OPEN CHANNEL</div>
+          <h2>THE WORLD<br>WON'T BUILD<br><span>ITSELF.</span></h2>
+          <p>Your next step starts with the official source. Explore upcoming announcements, competition information, workshops and registration requirements.</p>
+          <a class="access-button" href="https://techfest.org/" target="_blank" rel="noopener noreferrer">
+            ACCESS TECHFEST <span>↗</span>
+          </a>
+        </div>
+        <div class="access-side">
+          <div class="access-code">TF / IITB<br>INNOVATION NETWORK</div>
+          <div class="big-symbol">T<span>F</span></div>
+          <div class="access-side-note">CURIOSITY IS YOUR<br>ENTRY CREDENTIAL.</div>
+        </div>
+      </div>
+      <div class="access-footer"><span>END OF BRIEF / BEGINNING OF ACTION</span><span>CHANNEL: TECHFEST.ORG ↗</span></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="identity" href="#home">
+      <span class="identity-icon">T<span>F</span></span>
+      <span class="identity-text">TECHFEST <small>IIT BOMBAY / 2026</small></span>
+    </a>
+    <div class="footer-credit">CONCEPT & WEB EXPERIENCE<br><strong>ADITYA PADHY</strong></div>
+    <a href="#home" class="back-top">RETURN TO TOP ↑</a>
+  </footer>
+</body>
+</html>
